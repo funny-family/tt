@@ -9,14 +9,9 @@ export const fetchUsersData = () => async (dispatch) => {
     loadingState: false
   });
 
-  // const url = 'http://demo.sibers.com/users';
-  const url = 'https://jsonplaceholder.typicode.com/todos/1';
+  const url = 'http://demo.sibers.com/users';
   const response = await fetch(url, {
     method: 'GET',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json'
-    }
   });
 
   if (response.ok) {
