@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
-import reduceFetchedUsers from './user/reducers/reduce-fetched-users';
+// modules
+import usersReducers from './modules/users';
 
 const rootReducer = combineReducers({
-  // here should be all imported reducers!
-  reduceFetchedUsers
+  ...usersReducers
 });
 
 export default rootReducer;

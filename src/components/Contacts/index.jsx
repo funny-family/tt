@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchUsersData } from '../../store/user/actions/fetch-users';
+import { fetchUsersData } from '../../store/modules/users/actions/fetch-users';
 
 function Contacts({ dispatch }) {
 
