@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles/main.css';
 
-import UserList from './components/UserList';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
     <div className="App">
-      <UserList />
+      <Contacts />
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.

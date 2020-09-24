@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchUsersData } from '../../store/user/actions/fetch-users';
 
-function UserList({ dispatch }) {
+function Contacts({ dispatch }) {
+
   function showUsers(event) {
     event.preventDefault();
     console.log('showUsers is work!');
@@ -20,4 +21,4 @@ function UserList({ dispatch }) {
   );
 }
 
-export default connect()(UserList);
+export default connect()(Contacts);
