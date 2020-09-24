@@ -6,12 +6,11 @@ function ContactList({ dispatch }) {
 
   function showUsers(event) {
     event.preventDefault();
-    console.log('showUsers is work!');
     dispatch(fetchUsersData());
   }
 
   return (
-    <div className="">
+    <div>
       <form
         onSubmit={ showUsers }
       >
