@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchUsersData } from '../../store/modules/users/actions/fetch-users';
 
-function Contacts({ dispatch }) {
+function ContactList({ dispatch }) {
 
   function showUsers(event) {
     event.preventDefault();
@@ -21,4 +21,4 @@ function Contacts({ dispatch }) {
   );
 }
 
-export default connect()(Contacts);
+export default connect()(ContactList);
