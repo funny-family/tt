@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
 // modules
-import usersReducers from './modules/users';
+import users from './reducers/users-reducer';
 
 const rootReducer = combineReducers({
-  ...usersReducers
+  users
 });
 
 export default rootReducer;
