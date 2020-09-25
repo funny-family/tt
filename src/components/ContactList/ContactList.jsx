@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchUsersData } from '../../store/modules/users/actions/fetch-users';
+import { fetchUsersData } from '../../store/actions/fetch-users';
 
 function ContactList({ dispatch }) {
 
@@ -8,6 +8,10 @@ function ContactList({ dispatch }) {
     event.preventDefault();
     dispatch(fetchUsersData());
   }
+
+  useEffect(() => {
+    //
+  });
 
   return (
     <div>
