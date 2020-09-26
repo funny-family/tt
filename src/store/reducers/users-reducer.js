@@ -8,8 +8,7 @@ const users = (state = initialState, action) => {
     case 'SET_USERS':
       return {
         ...state,
-        usersContainer: action.users,
-        isDataLoading: true
+        usersContainer: action.users
       };
 
     case 'SET_DATA_LOADING':

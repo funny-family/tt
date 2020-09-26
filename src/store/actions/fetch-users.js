@@ -1,24 +1,21 @@
-export const setLoadingState = (isDataLoading = false) => ({
+export const setLoadingState = (isDataLoading) => ({
   type: 'SET_DATA_LOADING',
   isDataLoading
 });
 
 export const fetchUsersData = () => async (dispatch) => {
-  dispatch({
-    type: 'SET_DATA_LOADING',
-    loadingState: false
-  });
+  dispatch(setLoadingState(true));
 
   const url = 'http://demo.sibers.com/users';
   const response = await fetch(url, {
     method: 'GET',
   });
-
+  
   if (response.ok) {
     const users = await response.json();
-
     dispatch(setUsers(users));
-    // console.log(users);
+
+    dispatch(setLoadingState(false));
   } else {
     console.log('Falid to fetch users data!');
   }
