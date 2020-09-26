@@ -22,6 +22,7 @@ function ContactList() {
 
   return (
     <div>
+      <Loader />
       <form
         onSubmit={ showUsers }
       >
