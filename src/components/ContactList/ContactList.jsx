@@ -29,7 +29,7 @@ function ContactList() {
         <button type="submit">show users in console</button>
       </form>
       {
-        usersListLoadingState === true ? <Loader /> : <div>{ JSON.stringify(usersList[0]) }</div>
+        usersListLoadingState ? <Loader /> : <div>{ JSON.stringify(usersList[0]) }</div>
       }
     </div>
   );
