@@ -1,6 +1,6 @@
-export const setLoadingState = (isDataLoading) => ({
+export const setLoadingState = (loadingState) => ({
   type: 'SET_DATA_LOADING',
-  isDataLoading
+  loadingState
 });
 
 export const fetchUsersData = () => async (dispatch) => {
