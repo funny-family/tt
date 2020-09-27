@@ -7,7 +7,7 @@ import Loader from '../Loader/Loader';
 function ContactList() {
   const dispatch = useDispatch();
 
-  const isUsersListLoading = useSelector((state) => state.users.isLoading);
+  const isUserListLoading = useSelector((state) => state.users.isLoading);
   const usersList = useSelector((state) => state.users.list);
 
   function showUsers(event) {
@@ -18,7 +18,7 @@ function ContactList() {
 
   console.log(usersList);
   // console.log(usersList[0]?.name);
-  // console.log(isUsersListLoading);
+  // console.log(isUserListLoading);
 
   return (
     <div>
@@ -29,7 +29,7 @@ function ContactList() {
         <button type="submit">show users in console</button>
       </form>
       {
-        isUsersListLoading ? <Loader /> : <div>{ JSON.stringify(usersList[0]) }</div>
+        isUserListLoading ? <Loader /> : <div>{ JSON.stringify(usersList[0]) }</div>
       }
     </div>
   );
