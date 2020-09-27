@@ -5,13 +5,11 @@ import './Avatar.css';
 
 function Avatar(props) {
   return (
-    <div>
-      <img
-        className="avatar-container"
-        src={ props.src }
-        alt="user avatar"
-      />
-    </div>
+    <img
+      className="avatar-container"
+      src={ props.src }
+      alt="user avatar"
+    />
   );
 }
 
