@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import './Contanct.css';
 
+import Avatar from './Avatar/Avatar';
+
 function Contanct(props) {
   return (
     <div className="contact-container">
@@ -34,7 +36,7 @@ function Contanct(props) {
 
       <br/>
 
-      <div>avatar: { props.avatar }</div>
+      <Avatar src={ props.avatar } />
       <div>favorite: { props.favorite.toString() }</div>
     </div>
   );
