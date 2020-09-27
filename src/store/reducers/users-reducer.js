@@ -1,6 +1,6 @@
 const initialState = {
   list: [],
-  loading: false
+  isLoading: false
 };
 
 const users = (state = initialState, action) => {
@@ -14,7 +14,7 @@ const users = (state = initialState, action) => {
     case 'SET_DATA_LOADING':
       return {
         ...state,
-        loading: action.loadingState
+        isLoading: action.loadingState
       };
 
     default:
