@@ -1,0 +1,4 @@
+.icon-favourite:hover {
+  filter: brightness(1.4);
+  cursor: pointer;
+}
