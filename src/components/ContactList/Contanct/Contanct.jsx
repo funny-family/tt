@@ -9,9 +9,13 @@ import Favourite from './Favourite/Favourite';
 function Contanct(props) {
   return (
     <div className="contact-container">
+      <Avatar src={ props.avatar } />
+      <Favourite isFavourite={ props.favorite }/>
+
       <div>name: { props.name }</div>
       <div>username: { props.username }</div>
       <div>email: { props.email }</div>
+      <div>phone: { props.phone }</div>
 
       <p>address:</p>
       <ul>
@@ -21,8 +25,6 @@ function Contanct(props) {
         <li>zipcode: { props.zipcode }</li>
       </ul>
 
-      <br/>
-
       <p>company:</p>
       <ul>
         <li>business: { props.business }</li>
@@ -30,15 +32,8 @@ function Contanct(props) {
         <li>company name: { props.companyName }</li>
       </ul>
 
-      <br/>
-
-      <div>phone: { props.phone }</div>
       <div>website: { props.website }</div>
 
-      <br/>
-
-      <Avatar src={ props.avatar } />
-      <Favourite isFavourite={ props.favorite }/>
     </div>
   );
 }
