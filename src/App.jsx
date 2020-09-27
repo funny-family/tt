@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <ContactList />
-      <Test/>
+      {/* <Test/> */}
     </div>
   );
 }
