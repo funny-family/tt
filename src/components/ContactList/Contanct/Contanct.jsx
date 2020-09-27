@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './Contanct.css';
 
 import Avatar from './Avatar/Avatar';
+import Favourite from './Favourite/Favourite';
 
 function Contanct(props) {
   return (
@@ -37,7 +38,7 @@ function Contanct(props) {
       <br/>
 
       <Avatar src={ props.avatar } />
-      <div>favorite: { props.favorite.toString() }</div>
+      <Favourite isFavourite={ props.favorite }/>
     </div>
   );
 }
