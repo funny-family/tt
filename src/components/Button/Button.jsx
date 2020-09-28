@@ -24,7 +24,7 @@ function Button(props) {
   return (
     <button
       className={
-        `${buttonStyleType}-button btn`
+        `${buttonStyleType}-button btn ${props.className}`
       }
       type={ props.type }
       onClick={ props.onClick }
@@ -37,7 +37,8 @@ function Button(props) {
 
 Button.prototype = {
   type: PropTypes.string,
-  styleType: PropTypes.string
+  styleType: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default Button;
