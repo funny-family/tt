@@ -4,36 +4,28 @@ import { connect, useSelector, useDispatch } from 'react-redux';
 import { fetchUsersData } from '../../store/actions/fetch-users';
 
 import Contanct from './Contanct/Contanct';
-import Loader from '../Loader/Loader';
+// import Loader from '../Loader/Loader';
 
 import './ContactList.scss';
 
 function ContactList() {
   const dispatch = useDispatch();
 
-  const isUserListLoading = useSelector((state) => state.users.isLoading);
+  // const isUserListLoading = useSelector((state) => state.users.isLoading);
   const userList = useSelector((state) => state.users.list);
 
-  function showUsers(event) {
-    event.preventDefault();
-    
+  const showContactList = () => {
     dispatch(fetchUsersData());
-  }
-  // console.log(userList);
+  };
 
-  // console.log(userList[0]?.name);
-  // console.log(isUserListLoading);
+  useEffect(() => {
+    showContactList();
+  });
 
   return (
     <div>
-      <form
-        onSubmit={ showUsers }
-      >
-        <button type="submit">show users in console</button>
-      </form>
       {
         userList.map((contactInfo, key) => {
-          console.log(contactInfo);
           return (
             <Contanct
               key={key}
