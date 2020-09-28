@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Contanct.css';
+import './Contanct.scss';
 
 import Avatar from './Avatar/Avatar';
 import Favourite from './Favourite/Favourite';

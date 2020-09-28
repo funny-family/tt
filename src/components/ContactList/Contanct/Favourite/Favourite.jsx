@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Favourite.css';
+import './Favourite.scss';
 
 function Favourite(props) {
   const iconSize = 24;
