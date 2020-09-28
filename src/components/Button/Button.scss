@@ -1,0 +1,62 @@
+@import '../../styles/global-colors.scss';
+
+.btn {
+  box-sizing: border-box;
+
+  font-weight: 600;
+
+  padding: 12px 16px;
+
+  border-radius: 8px;
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+
+  -webkit-transition: filter 0.2s ease-out;
+  -moz-transition: filter 0.2s ease-out;
+  -o-transition: filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+}
+
+// button styleTypes:
+.bordered-button {
+  color: $secondary-accent-color;
+  border: 2px solid $secondary-accent-color;
+  background-color: $primary-bg-color;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}
+
+.accent-button {
+  color: $secondary-text-color;
+  background-color: $secondary-accent-color;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+}
+
+.regular-button {
+  color: $primary-text-color;
+  background-color: $secondary-bg-color;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:active {
+    filter: brightness(0.8);
+  }
+}
