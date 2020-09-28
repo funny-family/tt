@@ -6,6 +6,8 @@ import { fetchUsersData } from '../../store/actions/fetch-users';
 import Contanct from './Contanct/Contanct';
 import Loader from '../Loader/Loader';
 
+import './ContactList.scss';
+
 function ContactList() {
   const dispatch = useDispatch();
 
