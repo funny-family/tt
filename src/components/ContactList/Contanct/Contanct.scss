@@ -75,6 +75,19 @@
   margin-top: 8px;
 }
 
-.additional-info {
+.additional-info-container {
   margin-top: 8px;
+}
+
+.additional-info {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.additional-info td, .additional-info th {
+  padding: 8px;
+}
+
+.additional-info tr:hover {
+  background-color: $secondary-bg-color;
 }
