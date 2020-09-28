@@ -5,21 +5,30 @@ import './Button.scss';
 
 // button styleTypes: bordered, accent, regular
 function Button(props) {
-  let buttonStyletype = '';
-  if (props.styleType === 'bordered') {
-    buttonStyletype = 'bordered'
-  } else if (props.styleType === 'accent') {
-    buttonStyletype = 'accent';
-  } else {
-    buttonStyletype = 'regular' // as default button style type
+  let buttonStyleType = '';
+
+  switch (props.styleType) {
+    case 'bordered':
+      buttonStyleType = 'bordered';
+      break;
+  
+    case 'accent':
+      buttonStyleType = 'accent';
+      break;
+    
+    default:
+      buttonStyleType = 'regular'
+      break;
   }
 
   return (
     <button
       className={
-        `${buttonStyletype}-button btn`
+        `${buttonStyleType}-button btn`
       }
       type={ props.type }
+      onClick={ props.onClick }
+      onSubmit={ props.onSubmit }
     >
       {props.children}
     </button>
